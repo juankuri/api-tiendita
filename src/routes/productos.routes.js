@@ -34,7 +34,6 @@ const validateProducto = [
     .isLength({ max: 20 })
     .withMessage("El SKU no debe superar los 20 caracteres"),
 
-  // Middleware para manejar errores
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
