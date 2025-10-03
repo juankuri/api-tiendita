@@ -9,7 +9,4 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-console.log("Conectando con usuario:", process.env.DB_USER);
-console.log("Password:", JSON.stringify(process.env.DB_PASSWORD));
-
 module.exports = pool;
